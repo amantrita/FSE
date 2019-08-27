@@ -19,9 +19,11 @@ export class EventService {
   }
 
   showLoading(show: boolean) {
+    if(document.getElementById('loading-div')){
     if (show)
       document.getElementById('loading-div').style.display = 'block';
     else
       document.getElementById('loading-div').style.display = 'none';
+    }
   }
 }
